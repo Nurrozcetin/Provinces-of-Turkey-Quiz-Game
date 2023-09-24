@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BEE3C0"
+    tools:context=".basicGameActivity">
+
+    <TextView
+        android:id="@+id/txtBInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/txtBSumPoint"
+        app:layout_constraintStart_toStartOf="@+id/txtBSumPoint"
+        app:layout_constraintTop_toBottomOf="@+id/txtBSumPoint" />
+
+    <TextView
+        android:id="@+id/txtBSpace"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtBInfo"
+        app:layout_constraintStart_toStartOf="@+id/txtBInfo"
+        app:layout_constraintTop_toBottomOf="@+id/txtBInfo" />
+
+    <EditText
+        android:id="@+id/editTxtBGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter your guess"
+        android:inputType="text"
+        android:textSize="19sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/txtBSpace"
+        app:layout_constraintStart_toStartOf="@+id/txtBSpace"
+        app:layout_constraintTop_toBottomOf="@+id/txtBSpace" />
+
+    <Button
+        android:id="@+id/btnBGetLetter"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:background="#770202"
+        android:onClick="btnGetLetter"
+        android:text="Get Letters"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnBGuess"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtBGuess" />
+
+    <Button
+        android:id="@+id/btnBGuess"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="#770202"
+        android:onClick="btnGuess"
+        android:text="Guess"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtBGuess" />
+
+    <TextView
+        android:id="@+id/txtBSumPoint"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="Your Score: 0"
+        android:textAlignment="center"
+        android:textColor="#045007"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

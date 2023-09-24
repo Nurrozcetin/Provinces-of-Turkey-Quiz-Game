@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEDC8"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnBasicGame"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:background="#770202"
+        android:onClick="btnGameChoose"
+        android:text="Basic Game"
+        android:textSize="19sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/txtGameName"
+        app:layout_constraintStart_toStartOf="@+id/txtGameName"
+        app:layout_constraintTop_toBottomOf="@+id/txtGameName" />
+
+    <Button
+        android:id="@+id/btnTimedGame"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#770202"
+        android:onClick="btnGameChoose"
+        android:text="Timed Game"
+        android:textSize="19sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/btnBasicGame"
+        app:layout_constraintStart_toStartOf="@+id/btnBasicGame"
+        app:layout_constraintTop_toBottomOf="@+id/btnBasicGame" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#770202"
+        android:onClick="btnGameChoose"
+        android:text="Exit"
+        android:textSize="19sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/btnTimedGame"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toStartOf="@+id/btnTimedGame"
+        app:layout_constraintTop_toBottomOf="@+id/btnTimedGame" />
+
+    <TextView
+        android:id="@+id/txtGameName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Name City Game "
+        android:textColor="#040404"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
